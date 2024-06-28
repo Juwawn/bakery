@@ -1,3 +1,100 @@
-#cookie {
-    color: blueviolet;
+* {box-sizing: border-box;}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #301934;
+}
+
+.background {
+    background-color: #22EE88;
+}
+
+.header-title {
+    color: aliceblue;
+}
+
+.header-title:hover {
+    color: #22EE88;
+}
+
+h2 {
+    color: aliceblue;
+}
+
+.navbar-link {
+    color: black;
+}
+
+.navbar-link:hover {
+    color: #982257;
+}
+
+.nav-link {
+    color: aliceblue;
+}
+
+.nav-link:hover {
+    color: #22EE88;
+}
+
+.login-btn {
+    color: aliceblue;
+}
+
+.login-btn:hover {
+    color: #22EE88;
+}
+
+.form-text {
+    color: aliceblue;
+}
+
+.login-btn2 {
+    background-color: #22EE88;
+}
+
+.login-btn2:hover {
+    color: aliceblue;
+}
+
+.title {
+    color: black;
+}
+
+.card {
+    background-color: #22EE88;
+}
+
+.card-text {
+    color: black;
+}
+
+.title:hover {
+    color: #982257;
+}
+
+.site-text {
+    color: aliceblue;
+}
+
+.single-link {
+    color: aliceblue;
+}
+
+.single-link:hover {
+    color: #22EE88;
+}
+
+.form-btn {
+    background-color: #22EE88;
+}
+
+.form-btn:hover {
+    color: aliceblue;
+    background-color: black;
+}
+
+caption {
+    color: #982257;
 }

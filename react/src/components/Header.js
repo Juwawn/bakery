@@ -8,7 +8,7 @@ const Header =()=> {
                 <div className="row">
                     <div className="col">
                         <h1 className="display-1 text-capitalize text-md-center ">
-                            <Link to='/' className='text-decoration-none'>
+                            <Link to='/' className=' header-title text-decoration-none'>
                                 I DESSERT IT SWEETS & TREATS
                             </Link>
                         </h1>

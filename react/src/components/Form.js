@@ -1,7 +1,7 @@
 const Form = ( { formData, handleChange, handleSubmit })=> {
     
     return(
-        // <main className="main" id="formMain">
+        <main className="main" id="formMain">
             <div className="container form-con mt-4">
                 <h2 className="text-center form-h2">Join & Become A Memeber</h2>
                 <form id="form" className="form" onSubmit={handleSubmit}>
@@ -68,13 +68,13 @@ const Form = ( { formData, handleChange, handleSubmit })=> {
                         </div>
                     </div>
                     <div className="mb-3">
-                        <button type="submit" className="btn btn-success text-capitalize">
+                        <button type="submit" className="btn form-btn text-capitalize">
                             create login
                         </button>
                     </div>
                 </form>
             </div>
-        // </main>
+        </main>
         
     )
 }

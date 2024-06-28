@@ -14,9 +14,7 @@ import Specialty from './components/Specialty'
 import Snackbox from './components/Snackbox'
 import Bakery from './components/Bakery'
 import Single from './components/Single'
-import Login from './components/Login'
 import Form from './components/Form'
-import Users from './components/Users'
 
 
 
@@ -73,9 +71,9 @@ const App = ()=> {
     return (
         <>
             <Header />
-            <Bakery />
+            <Bakery users={users}/>
             <Routes>
-                <Route path='/' element={ <Home /> } />
+                <Route path='/' element={ <Home users={users} /> } />
                 <Route path='*' element={ <ErrorPage /> } />
                 <Route path='/cookie' element={ <Cookie /> } />
                 <Route path='/brownie' element={ <Brownie /> } />
@@ -84,14 +82,12 @@ const App = ()=> {
                 <Route path='/specialty' element={ <Specialty /> } />
                 <Route path='/snackbox' element={ <Snackbox /> } />
                 <Route path='/:path/:id' element={ <Single /> } />
-                <Route path='/user' element={ <Login users={users}/> } />
                 <Route path='/sign-up' element={
                     <Form 
                         formData={formData} 
                         handleChange={handleChange}
                         handleSubmit={handleSubmit}
                     /> } />
-                <Route path='/users' element={ <Users users={users}/> } />
             </Routes>
             <Footer />
         </>

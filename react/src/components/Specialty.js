@@ -33,10 +33,10 @@ const Specialty = ()=> {
 
 
     return (
-        <main className="main" id="specialMain">
+        <main className="main mt-5" id="specialMain">
             <div className="container">
-                <h2>Specials</h2>
-                <div className='row row-cols-1 row-cols-md-5 g-4'>
+                <h2 className="text-center text-uppercase mb-5">Specialties</h2>
+                <div className='row row-cols-1 row-cols-md-4 g-4'>
                     { specialtyCard }
                 </div>
             </div>

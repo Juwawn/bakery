@@ -32,10 +32,10 @@ const Snackbox = ()=> {
 
 
     return (
-        <main className="main" id="snackMain">
+        <main className="main mt-5" id="snackMain">
             <div className="container">
-                <h2>Snackbox</h2>
-                <div className='row row-cols-1 row-cols-md-5 g-4'>
+                <h2 className="text-center text-uppercase mb-5">Snackboxes</h2>
+                <div className='row row-cols-1 row-cols-md-4 g-4'>
                     { snackboxCard }
                 </div>
             </div>

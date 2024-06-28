@@ -31,10 +31,10 @@ const Cupcake = ()=> {
     })
 
     return(
-        <main className="main" id="cupcakeMain">
+        <main className="main mt-5" id="cupcakeMain">
             <div className="container">
-                <h2>cupcake</h2>
-                <div className='row row-cols-1 row-cols-md-5 g-4'>
+                <h2 className="text-center text-uppercase mb-5">cupcakes</h2>
+                <div className='row row-cols-1 row-cols-md-4 g-5'>
                     { cupcakeCard }
                 </div>
             </div>
