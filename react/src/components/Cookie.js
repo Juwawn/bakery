@@ -13,7 +13,7 @@ const Cookie = ()=> {
             })
     }, [])
 
-    console.log(cookie)
+    // console.log(cookie)
 
     const cookieCard = cookie.map(cookie => {
 
@@ -24,7 +24,7 @@ const Cookie = ()=> {
                     name={cookie.name}
                     description={cookie.description}
                     imgUrl={cookie.flavorImg}
-                    path={'/cookie'}
+                    path={'cookie'}
                 />
         )
     })

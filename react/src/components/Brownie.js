@@ -24,7 +24,7 @@ const Brownie = ()=> {
                     name={brownie.name}
                     description={brownie.description}
                     imgUrl={brownie.flavorImg}
-                    path={'/brownie'}
+                    path={'brownie'}
                 />
         )
     })

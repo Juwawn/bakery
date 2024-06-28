@@ -13,7 +13,7 @@ const Snackbox = ()=> {
             })
     }, [])
 
-    console.log(snackbox)
+    // console.log(snackbox)
 
     const snackboxCard = snackbox.map(snackbox => {
 
@@ -24,7 +24,7 @@ const Snackbox = ()=> {
                     name={snackbox.name}
                     description={snackbox.description}
                     imgUrl={snackbox.flavorImg}
-                    path={'/snackbox'}
+                    path={'snackbox'}
                 />
         )
     })

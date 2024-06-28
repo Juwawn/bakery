@@ -73,7 +73,7 @@ const App = ()=> {
             <Header />
             <Bakery users={users}/>
             <Routes>
-                <Route path='/' element={ <Home users={users} /> } />
+                <Route path='/' element={ <Home /> } />
                 <Route path='*' element={ <ErrorPage /> } />
                 <Route path='/cookie' element={ <Cookie /> } />
                 <Route path='/brownie' element={ <Brownie /> } />

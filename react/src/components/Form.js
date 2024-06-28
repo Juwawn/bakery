@@ -2,9 +2,9 @@ const Form = ( { formData, handleChange, handleSubmit })=> {
     
     return(
         <main className="main" id="formMain">
-            <div className="container form-con mt-4">
+            <div className="container form-container mt-4">
                 <h2 className="text-center form-h2">Join & Become A Memeber</h2>
-                <form id="form" className="form" onSubmit={handleSubmit}>
+                <form className="form" id="form" onSubmit={handleSubmit}>
                     <div className="mb-3 row">
                         <div className="col-auto">
                             <label htmlFor="fName" className="form-label text-capitalize form-text">first name</label>
@@ -14,7 +14,7 @@ const Form = ( { formData, handleChange, handleSubmit })=> {
                                 name="fName"
                                 value={formData.fName}
                                 onChange={handleChange}
-                                className="form-control"
+                                className="form-control input-form"
                                 required
                             />
                         </div>

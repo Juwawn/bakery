@@ -13,7 +13,7 @@ const Specialty = ()=> {
             })
     }, [])
 
-    console.log(specialty)
+    // console.log(specialty)
 
     const specialtyCard = specialty.map(specialty => {
 
@@ -24,7 +24,7 @@ const Specialty = ()=> {
                     name={specialty.name}
                     description={specialty.description}
                     imgUrl={specialty.flavorImg}
-                    path={'/specialty'}
+                    path={'specialty'}
                 />
 
         )

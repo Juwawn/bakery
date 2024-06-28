@@ -13,7 +13,7 @@ const Cake = ()=> {
             })
     }, [])
 
-    console.log(cake)
+    // console.log(cake)
 
     const cakeCard = cake.map(cake => {
 
@@ -24,7 +24,7 @@ const Cake = ()=> {
                     name={cake.name}
                     description={cake.description}
                     imgUrl={cake.flavorImg}
-                    path={'/cake'}
+                    path={'cake'}
                 />
         )
     })

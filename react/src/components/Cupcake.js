@@ -14,7 +14,7 @@ const Cupcake = ()=> {
 
     }, [])
 
-    console.log(cupcake)
+    // console.log(cupcake)
 
     const cupcakeCard = cupcake.map(cupcake => {
 
@@ -25,7 +25,7 @@ const Cupcake = ()=> {
                     name={cupcake.name}
                     description={cupcake.description}
                     imgUrl={cupcake.flavorImg}
-                    path={'/cupcake'}
+                    path={'cupcake'}
                 />
         )
     })
