@@ -5,6 +5,7 @@ const cors = require('cors')
 const router = require('./app/routes/router')
 const port = process.env.port || 3005
 
+// security
 server.use(helmet.contentSecurityPolicy({
     useDefaults: true,
     crossOrginResourcePolicy: false,
@@ -19,6 +20,7 @@ server.use(cors())
     .use(express.json())
     .use(express.urlencoded({extended: true}))
 
+// localhost:3005 => router.js
 server.use('/', router)
 server.set('view engine', 'ejs')
 

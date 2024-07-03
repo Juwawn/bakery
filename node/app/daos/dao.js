@@ -1,3 +1,5 @@
+// dao.js is where all the daos meet
+
 const daoCommon = require('./common/daoCommon')
 
 const brownieDao = {...daoCommon, ...require('./api/brownieDao')}

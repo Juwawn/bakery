@@ -73,6 +73,7 @@ const App = ()=> {
             <Header />
             <Bakery users={users}/>
             <Routes>
+            {/* The path pattern to match against the URL to determine if this route matches a URL, link href, or form action. */}
                 <Route path='/' element={ <Home /> } />
                 <Route path='*' element={ <ErrorPage /> } />
                 <Route path='/cookie' element={ <Cookie /> } />

@@ -5,6 +5,7 @@ const port = process.env.port || 3005
 
 const tables = ['flavor','size', 'cookie', 'brownie', 'cake', 'cupcake', 'specialty', 'snackbox', 'user']
 
+// Root Route => localhost:3005/api
 router.get('/api', (req, res)=> {
     res.json({
         'All Flavors': `http://localhost:${port}/api/flavor`,

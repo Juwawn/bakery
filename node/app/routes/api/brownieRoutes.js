@@ -1,6 +1,9 @@
 const express = require('express')
 const router = express.Router()
 
+// localhost:3005/api/brownie
+
+// Destructure brownieDao
 const { brownieDao: dao } = require('../../daos/dao')
 
 router.get('/', (req, res)=> {

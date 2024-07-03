@@ -7,6 +7,7 @@ const Single = ()=> {
 
     const [ single, setSingle ] = useState({})
     const params = useParams()
+    // The useParams hook returns an object of key/value pairs of the dynamic params from the current URL that were matched by the <Route path>. Child routes inherit all params from their parent routes.
 
     const url = `http://localhost:3005/api/${params.path}/${params.id}`
 
@@ -19,7 +20,7 @@ const Single = ()=> {
     }, [])
 
 
-    console.log(single)
+    // console.log(single)
 
 
 
@@ -27,13 +28,13 @@ const Single = ()=> {
         <main className="main mt-5" id="singleMain">
             <div className="container">
                 <div className='row'>
-                    <div className="col-6">
+                    <div className="col-md-6">
                         <h2 className="text-capitalize text-center">
                             <Link to={`/${params.path}`} className="single-link text-decoration-none" aria-current="page" >{params.path}s</Link> : {single.name}
                         </h2>
                         <img src={`/images/${single.flavorImg}`} alt={`image of ${single.name}`} className="img-fluid d-block mx-auto single-image" />
                     </div>
-                    <div className="col-6 mt-5">
+                    <div className="col-md-6 mt-5">
                         <div className="card">
                             <div className="card-body">
                                 <table className=" table table-hover table-sm caption-top text-center">

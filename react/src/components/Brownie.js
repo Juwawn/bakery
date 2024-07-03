@@ -2,10 +2,13 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Card from "./Card";
 
+
 const Brownie = ()=> {
+
 
     const [ brownie, setBrownie ] = useState([])
 
+    // prevents infinite loop rendering
     useEffect(()=> {
         axios.get('http://localhost:3005/api/brownie')
             .then (res => {
@@ -13,7 +16,7 @@ const Brownie = ()=> {
             })
     }, [])
 
-    console.log(brownie)
+    // console.log(brownie)
 
     const brownieCard = brownie.map(brownie => {
 
